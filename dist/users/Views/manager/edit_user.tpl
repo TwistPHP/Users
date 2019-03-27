@@ -1,9 +1,11 @@
-
-<div class="box 100">
-    <div class="box 100" style="border: 0;">
-        <h2 style="padding-left: 15px;">Edit User</h2>
-        {messages:error}
-        <form action="/manager/users/edit/{data:id}" method="post" autocomplete="false">
+<h1>Users: Edit</h1>
+{messages:all}
+<form action="/manager/users/edit/{data:id}" method="post" autocomplete="false">
+    <div class="box">
+        <div class="boxTitle">
+            <h3>Account Details</h3>
+        </div>
+        <div class="boxContent">
             <label>First Name<sup>*</sup></label>
             <input type="text" name="firstname" value="{data:firstname}" autocomplete="false">
             <label>Surname<sup>*</sup></label>
@@ -19,9 +21,10 @@
             </select>
             <label>Password<sup>*</sup></label>
             <input type="password" name="password" required>
-    </div>
-        <div class="boxFooter">
-            <button class="button button-primary" type="submit">Submit</button>
+            <div class="clear"></div>
         </div>
-    </form>
-</div>
+        <div class="boxFooter">
+            <button class="button button-primary" type="submit">Save Changes</button>
+        </div>
+    </div>
+</form>

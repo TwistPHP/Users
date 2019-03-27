@@ -1,10 +1,12 @@
-
-<div class="box 100">
-    <div class="box 100" style="border:0;">
-        <h2 style="padding-left: 10px;">Create User</h2>
-        <p>This is where you can create users which will be automatically added to the database to reuse within your app.</p>
-        {messages:error}
-        <form action="/manager/users/create" method="post">
+<h1>Users: Create</h1>
+<p>This is where you can create users which will be automatically added to the database to reuse within your app.</p>
+{messages:all}
+<form action="/manager/users/create" method="post" autocomplete="false">
+    <div class="box">
+        <div class="boxTitle">
+            <h3>Account Details</h3>
+        </div>
+        <div class="boxContent">
             <label>First Name<sup>*</sup></label>
             <input type="text" name="firstname">
             <label>Surname<sup>*</sup></label>
@@ -20,9 +22,10 @@
             </select>
             <label>Password<sup>*</sup></label>
             <input type="password" name="password" required>
-    </div>
-        <div class="boxFooter">
-            <button class="button button-primary" type="submit">Submit</button>
+            <div class="clear"></div>
         </div>
-    </form>
-</div>
+        <div class="boxFooter">
+            <button class="button button-primary" type="submit">Create</button>
+        </div>
+    </div>
+</form>
