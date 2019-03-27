@@ -25,5 +25,5 @@
     });
 </script>
 <style>
-    .showOnHover{ display: none; } .showHover:hover .showOnHover{ display: block; } tbody a{ font-size: 30px; color: #000;padding-right: 5px;} tbody a:hover{ color: #529F00; transition: all 0.5s ease-in;} p a{ font-size: 16px; text-decoration: none; color: #000; } p a:hover{ color: #529F00; transition: all 0.5s ease-in; } a:visited{ color: #000;} .box-inner{padding:20px;} .box-inner h2{padding-left:10px;}
+    tbody a{ font-size: 30px; color: #000;padding-right: 5px;} tbody a:hover{ color: #529F00; transition: all 0.5s ease-in;}
 </style>
