@@ -6,12 +6,11 @@
 <table>
     <thead>
     <tr>
-        <td>UserID</td>
-        <td>Email</td>
         <td>Name</td>
-        <td>Last active</td>
-        <td>User permissions</td>
+        <td>Email</td>
+        <td>Level</td>
         <td>User IP</td>
+        <td>Last active</td>
         <td></td>
     </tr>
     </thead>

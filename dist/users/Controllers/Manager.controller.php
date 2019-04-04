@@ -2,6 +2,8 @@
 
 	namespace Packages\users\Controllers;
 
+	use Packages\users\Models\Gravatar;
+
 	/**
 	 * Class Manager Controller
 	 * @package Packages\users\Controllers
@@ -79,6 +81,12 @@
 
             //Check to see that the userID is bigger than 0 and that we have user data
             if($intUserID > 0 && count(arrTags)){
+
+				$arrTags['avatar_url'] = Gravatar::get($arrTags['email']);
+
+				$arrTags['tabs'] = '';
+				$arrTags['tab_content'] = '';
+
                 return $this->_view('manager/edit_user.tpl',$arrTags);
             }
 
